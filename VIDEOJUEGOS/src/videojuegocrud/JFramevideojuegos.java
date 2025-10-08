@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  *
- * @author MARIA
+ * @author CARLOS
  */
 public class JFramevideojuegos extends javax.swing.JFrame {
     
@@ -309,38 +309,44 @@ private void restaurarTablaPrincipal() {
 
         jLabel4.setText("PRECIO");
 
-        btnInsertar.setText("Insertar");
+        btnInsertar.setText("INSERTAR");
         btnInsertar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnInsertarActionPerformed(evt);
             }
         });
 
-        btnActualizar.setText("Actualizar");
+        btnActualizar.setText("ACTUALIZAR");
         btnActualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnActualizarActionPerformed(evt);
             }
         });
 
-        btnBuscar.setText("Buscar");
+        btnBuscar.setText("BUSCAR");
         btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBuscarActionPerformed(evt);
             }
         });
 
-        btnLimpiar.setText("Limpiar");
+        btnLimpiar.setText("LIMPIAR");
         btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLimpiarActionPerformed(evt);
             }
         });
 
-        btnEliminar.setText("Eliminar");
+        btnEliminar.setText("ELIMINAR");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarActionPerformed(evt);
+            }
+        });
+
+        txtId.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIdActionPerformed(evt);
             }
         });
 
@@ -353,37 +359,40 @@ private void restaurarTablaPrincipal() {
             .addGroup(jScrollPane1Layout.createSequentialGroup()
                 .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jScrollPane1Layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
                         .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel5))
-                        .addGap(13, 13, 13))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jScrollPane1Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnBuscar)
-                        .addGap(18, 18, 18)))
-                .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jScrollPane1Layout.createSequentialGroup()
+                            .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jScrollPane1Layout.createSequentialGroup()
+                                    .addGap(19, 19, 19)
+                                    .addComponent(jLabel5))
+                                .addGroup(jScrollPane1Layout.createSequentialGroup()
+                                    .addGap(25, 25, 25)
+                                    .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel2)
+                                        .addComponent(jLabel3)
+                                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jScrollPane1Layout.createSequentialGroup()
+                                .addGap(19, 19, 19)
+                                .addComponent(jLabel1)))
+                        .addGap(54, 54, 54)
                         .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtId, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(txtconsultar, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(txtPrecio, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 238, Short.MAX_VALUE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(txtGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtconsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jScrollPane1Layout.createSequentialGroup()
+                        .addGap(83, 83, 83)
                         .addComponent(btnInsertar)
-                        .addGap(18, 18, 18)
+                        .addGap(118, 118, 118)
+                        .addComponent(btnEliminar))
+                    .addGroup(jScrollPane1Layout.createSequentialGroup()
+                        .addGap(30, 30, 30)
+                        .addComponent(btnBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(59, 59, 59)
                         .addComponent(btnActualizar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                        .addComponent(btnLimpiar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(btnEliminar)
-                        .addGap(16, 16, 16))))
+                        .addGap(75, 75, 75)
+                        .addComponent(btnLimpiar)))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
         jScrollPane1Layout.setVerticalGroup(
             jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -400,21 +409,23 @@ private void restaurarTablaPrincipal() {
                 .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3))
-                .addGap(24, 24, 24)
-                .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(21, 21, 21)
+                .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel4)
                     .addComponent(txtPrecio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33)
                 .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(txtconsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 77, Short.MAX_VALUE)
+                    .addComponent(txtconsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnEliminar)
                     .addComponent(btnBuscar)
-                    .addComponent(btnInsertar)
                     .addComponent(btnActualizar)
                     .addComponent(btnLimpiar))
+                .addGap(18, 18, 18)
+                .addGroup(jScrollPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnInsertar)
+                    .addComponent(btnEliminar))
                 .addGap(51, 51, 51))
         );
 
@@ -494,6 +505,10 @@ private void restaurarTablaPrincipal() {
         // TODO add your handling code here:
         limpiarCampos();
     }//GEN-LAST:event_btnLimpiarActionPerformed
+
+    private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIdActionPerformed
 
    public static void main(String args[]) {
         /* Set the Nimbus look and feel */
